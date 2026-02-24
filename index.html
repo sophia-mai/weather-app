@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="flex flex-col justify-between h-screen p-10 text-3xl">
+      <header class="flex flex-col w-full gap-5">
+        <h1 class="text-4xl font-semibold">Weather App</h1>
+        <form id="search">
+          <input
+            id="city"
+            name="city"
+            class="w-full p-4 border-2"
+            type="text"
+            placeholder="Enter a location to get weather forecast"
+          />
+        </form>
+      </header>
+      <footer class="flex justify-between">
+        <div id="name" class="">City Name</div>
+        <div id="condition" class="">Weather Condition</div>
+        <div id="temperature" class="">Temperature</div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
